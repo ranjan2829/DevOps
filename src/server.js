@@ -1,4 +1,4 @@
-const ecpress = require('express');
+const express = require('express');
 const app=express();
 app.get('/',(req,res)=>{
     res.send("Welcome to ranjan's app !");
