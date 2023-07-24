@@ -1,18 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: mongo-deployment
   labels:
-    app: nginx
+    app: mongo
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: nginx
+      app: mongo
   template:
     metadata:
       labels:
-        app: nginx
+        app: mongo
+
     spec:
       containers:
       - name: mongodb
