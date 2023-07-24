@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx
-        image: nginx:1.14.2
+      - name: mongodb
+        image: mongo5.0
         ports:
-        - containerPort: 80
+        - containerPort: 27017
