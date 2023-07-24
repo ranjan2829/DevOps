@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mongo-deployment
+  name: webapp-deployment
   labels:
-    app: mongo
+    app: webapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mongo
+      app: webapp
   template:
     metadata:
       labels:
-        app: mongo
+        app: webapp
 
     spec:
       containers:
-      - name: mongodb
+      - name: webapp
         image: nanajanashia/k8s-demo-app:v1.0
         ports:
         - containerPort: 3000
@@ -24,12 +24,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongo-service
+  name: webapp-service
 spec:
   selector:
-    app.kubernetes.io/name: mongo
+    app: webapp
   ports:
     - protocol: TCP
-      port: 80
+      port: 3000
       targetPort: 3000
       //the target port === container port 
