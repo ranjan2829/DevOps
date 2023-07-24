@@ -27,8 +27,9 @@ metadata:
   name: mongo-service
 spec:
   selector:
-    app.kubernetes.io/name: MyApp
+    app.kubernetes.io/name: mongo
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 9376
+      targetPort: 27017
+      //the target port === container port 
