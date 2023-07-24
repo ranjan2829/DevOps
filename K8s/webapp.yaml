@@ -1,18 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mongo-deployment
+  name: webapp
+  -deployment
   labels:
-    app: mongo
+    app: webapp
+    
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mongo
+      app: webapp
+      
   template:
     metadata:
       labels:
-        app: mongo
+        app: webapp
+        
 
     spec:
       containers:
@@ -24,10 +28,12 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongo-service
+  name: webapp
+  -service
 spec:
   selector:
-    app.kubernetes.io/name: mongo
+    app.kubernetes.io/name: webapp
+    
   ports:
     - protocol: TCP
       port: 80
