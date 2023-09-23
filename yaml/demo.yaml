@@ -1,0 +1,12 @@
+"apple" : "i'm a red fruit "
+1: "im a number"
+fruits:
+  -apple
+  -mango
+  -watermelon
+
+cities:
+ -pune
+ -mumbai
+ -dehli
+ 
