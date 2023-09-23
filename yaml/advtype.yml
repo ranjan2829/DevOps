@@ -65,3 +65,39 @@ people: !!omap
      name: Rahul OP
      age: 50
      height: 456
+
+# dictionary !!omap
+people: !!omap
+  - Kunal:
+     name: Kunal Kushwaha
+     age: 78
+     height: 678
+  - Rahul:
+     name: Rahul OP
+     age: 50
+     height: 456
+
+# reusing some properties using anchors
+likings: &likes
+  fav fruit: mango
+  dislikes: grapes
+
+person1:
+  name: Kunal Kushwaha
+  <<: *likes
+
+person2:
+  name: Rahul
+  <<: *likes
+  dislikes: berries
+
+# this will look like
+person2:
+  name: Rahul
+  fav fruit: mango
+  dislikes: berries
+
+person3:
+  name: Apoorv
+  fav fruit: mango
+  dislikes: grapes
