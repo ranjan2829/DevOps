@@ -9,4 +9,12 @@ cities:
  -pune
  -mumbai
  -dehli
- 
+
+ ---
+Cities: [pune,mumbai]
+---
+
+{fruits : "mango"}
+
+
+
