@@ -1,0 +1,8 @@
+---
+School:
+- name: podar
+  pricipal: Someone
+  Students:
+  - rno: 12
+    name: ranjan
+    marks: 67
