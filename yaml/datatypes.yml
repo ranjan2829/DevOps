@@ -2,3 +2,16 @@
 name: Ranjan
 Name: "Ranjan"
 name_: 'ranjan'
+---
+
+bio: 
+ hi , i'm an studnt
+ age 20
+
+---
+#write msg in long way
+msg: >
+ hi
+ all
+ 
+
