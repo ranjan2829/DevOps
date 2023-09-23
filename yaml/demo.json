@@ -1,0 +1,13 @@
+{
+    "1": "i'm a number",
+    "apple": "i'm a red fruit ",
+    "fruits": "-apple -mango -watermelon"
+}
+
+{
+    "cities": "-pune -mumbai -dehli",
+    "Cities": [
+      "pune",
+      "mumbai"
+    ]
+  }
