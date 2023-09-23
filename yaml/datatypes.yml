@@ -13,5 +13,8 @@ bio:
 msg: >
  hi
  all
- 
 
+number: 5473
+marks: 98.76
+booleanValue: bool No
+# same for true -> yes, y, Y
