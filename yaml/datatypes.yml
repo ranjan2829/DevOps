@@ -18,3 +18,8 @@ number: 5473
 marks: 98.76
 booleanValue: bool No
 # same for true -> yes, y, Y
+#specify
+zero : !!int 0
+postivenum: !!int 10
+negativenum: !!int -10
+
